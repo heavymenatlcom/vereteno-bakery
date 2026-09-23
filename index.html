@@ -41,9 +41,10 @@
       </div>
     </div>
   </header>
-
+  
   <!-- МОБИЛЬНОЕ МЕНЮ -->
   <div class="mobile-menu-overlay" id="mobileMenu">
+    <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Закрыть меню">✕</button>
     <a href="#catalog" class="mobile-nav-link">Ассортимент</a>
     <a href="#chef" class="mobile-nav-link">Шеф</a>
     <a href="#consulting" class="mobile-nav-link">Обучение</a>
@@ -351,6 +352,7 @@
     const header = document.getElementById('siteHeader');
     const burgerBtn = document.getElementById('burgerBtn');
     const mobileMenu = document.getElementById('mobileMenu');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
     const mobileLinks = document.querySelectorAll('.mobile-nav-link, #mobileMenu .btn');
 
     window.addEventListener('scroll', () => {
@@ -361,17 +363,26 @@
       }
     });
 
+    const toggleMenu = (open) => {
+      mobileMenu.classList.toggle('active', open);
+      burgerBtn.classList.toggle('active', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+
     burgerBtn.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('active');
-      burgerBtn.classList.toggle('active');
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+      const isOpen = !mobileMenu.classList.contains('active');
+      toggleMenu(isOpen);
     });
+
+    if (mobileCloseBtn) {
+      mobileCloseBtn.addEventListener('click', () => {
+        toggleMenu(false);
+      });
+    }
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        burgerBtn.classList.remove('active');
-        document.body.style.overflow = '';
+        toggleMenu(false);
       });
     });
   </script>
