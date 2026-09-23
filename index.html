@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Vereteno Bakery | Искусство пекарного мастерства</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vereteno Bakery — авторские техкарты и консалтинг">
+  <meta property="og:description" content="Ремесленный хлеб и французское слоение на масле 85,5% Président от бренд-шефа Максима Веретельникова.">
+  <meta property="og:image" content="img/croissant-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- БЛОК 1: ШАПКА -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo">VERETENO <span>BAKERY</span></a>
+
+        <nav class="nav-menu">
+          <a href="#catalog" class="nav-link">Ассортимент</a>
+          <a href="#chef" class="nav-link">Шеф</a>
+          <a href="#consulting" class="nav-link">Обучение</a>
+          <a href="#checkout" class="nav-link">Оплата</a>
+          <a href="#contacts" class="nav-link">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#checkout" class="btn btn-primary">Заказать</a>
+          <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <a href="#catalog" class="mobile-nav-link">Ассортимент</a>
+    <a href="#chef" class="mobile-nav-link">Шеф</a>
+    <a href="#consulting" class="mobile-nav-link">Обучение</a>
+    <a href="#checkout" class="mobile-nav-link">Оплата</a>
+    <a href="#contacts" class="mobile-nav-link">Контакты</a>
+    <a href="#checkout" class="btn btn-primary" style="margin-top: 16px; padding: 14px 32px; font-size: 16px;">Заказать доступ</a>
+  </div>
+
+  <!-- БЛОК 2: HERO -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="badge-olive hero-badge">Ремесленная пекарня</span>
+        <h1 class="hero-title">Искусство пекарного мастерства</h1>
+        <p class="hero-subtitle">
+          Технологические карты выпечки ресторанного уровня на масле 85,5% Président и ремесленный Хлеб «Артизан» от бренд-шефа Максима Веретельникова.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-primary">Смотреть ассортимент</a>
+          <a href="#contacts" class="btn btn-secondary">Связаться</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-img-box">
+          <img src="img/croissant-hero.jpg" alt="Французский ремесленный круассан Vereteno Bakery" class="hero-img" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЛОК 3: КАТАЛОГ -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="section-title">
+        <h2>База технологических карт</h2>
+        <p>Каждая карта передается в виде защищенной Google Таблицы с формулами автопересчета на любой вес замеса и температурными профилями</p>
+      </div>
+
+      <div class="catalog-grid">
+        <!-- 1. Слоеное тесто -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="img/croissant-hero.jpg" alt="Слоеное тесто" class="product-img" loading="lazy">
+            <span class="product-tag">Топ продаж</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Слоеное тесто</h3>
+            <p class="product-desc">Масло 85,5% Président. Геометрия тонких слоев без вытекания масла и проседания.</p>
+            <ul class="product-list">
+              <li>Круассан-краб и классика</li>
+              <li>Пан-о-шоколя & Пан-сьюзи</li>
+              <li>Улитка с заварным кремом</li>
+              <li>Слоеный фигурный бант</li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">12 500 ₽</div>
+              <a href="#checkout" class="btn-card">Купить доступ</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Хлеб Артизан -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="img/bread-artisan.jpg" alt="Хлеб Артизан" class="product-img" loading="lazy">
+            <span class="product-tag">Живая закваска</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Хлеб «Артизан»</h3>
+            <p class="product-desc">80% гидратация, открытая пористость мякиша, звонкая корочка и холодная ферментация.</p>
+            <ul class="product-list">
+              <li>Тартин на закваске (открытый мякиш)</li>
+              <li>Ржаной ремесленный подовый</li>
+              <li>Чиабатта высокой гидратации</li>
+              <li>Фокачча с томатами и оливками</li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">12 000 ₽</div>
+              <a href="#checkout" class="btn-card">Купить доступ</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Тесто Бриошь -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="img/brioche-burger.jpg" alt="Тесто Бриошь" class="product-img" loading="lazy">
+            <span class="product-tag">Премиум сдоба</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Тесто Бриошь</h3>
+            <p class="product-desc">Нежнейшая сливочная структура для десертной витрины и ресторанных бургерных булок.</p>
+            <ul class="product-list">
+              <li>Воздушные пончики (донатс)</li>
+              <li>Праздничные бабки (шоколад/орех)</li>
+              <li>Творожные авторские ватрушки</li>
+              <li>Бургерный бриошь-хлеб</li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">7 900 ₽</div>
+              <a href="#checkout" class="btn-card">Купить доступ</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. База начинок -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="img/filling-cream.jpg" alt="База начинок" class="product-img" style="object-position: center 20%;" loading="lazy">
+            <span class="product-tag">Стабильность</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">База начинок</h3>
+            <p class="product-desc">Термостабильные и десертные начинки от кондитерской классики до ягодных центров.</p>
+            <ul class="product-list">
+              <li>Классический заварной крем</li>
+              <li>Шоколадные взбитые ганаши</li>
+              <li>Ягодные кули и конфи</li>
+              <li>Авторская маковая база</li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">10 000 ₽</div>
+              <a href="#checkout" class="btn-card">Купить доступ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЛОК 4: ШЕФ-ПЕКАРЬ -->
+  <section class="chef-section" id="chef">
+    <div class="container">
+      <div class="chef-grid">
+        <div class="chef-media">
+          <div class="chef-img-wrapper">
+            <img src="img/chef-maxim.jpg" alt="Бренд-шеф Максим Веретельников" class="chef-img" loading="lazy">
+          </div>
+        </div>
+        <div class="chef-info">
+          <span class="badge-olive chef-badge">Автор технологий</span>
+          <h2 class="chef-name">Максим Веретельников</h2>
+          <div class="chef-role">Бренд-шеф пекарь • Санкт-Петербург</div>
+
+          <div class="chef-quote" style="font-family: var(--font-body); font-style: normal; font-size: 14px; line-height: 1.6; color: #2C1E16; background: rgba(255, 255, 255, 0.7); padding: 16px 20px;">
+            «Я не учу абстрактному творчеству. Я даю точную физику процессов: от температуры корыта до процента влажности в расстойке. Моя задача — чтобы у вас был стабильный результат без брака и с предсказуемым фудкостом каждый рабочий день».
+          </div>
+
+          <div class="chef-facts-grid">
+            <div class="fact-item">
+              <div class="fact-num">15 лет</div>
+              <div class="fact-label">В профессии с 10 лет у печи</div>
+            </div>
+            <div class="fact-item">
+              <div class="fact-num">25 лет</div>
+              <div class="fact-label">Возраст бренд-шефа</div>
+            </div>
+            <div class="fact-item">
+              <div class="fact-num">BabichSchool</div>
+              <div class="fact-label">Выпускник международной школы</div>
+            </div>
+          </div>
+
+          <!-- Ссылка на блог в Threads -->
+          <div style="margin-top: 20px;">
+            <a href="https://www.threads.com/@_coach_maximich?hl=ru" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 13px; gap: 8px;">
+              <span>@_coach_maximich в Threads</span> ↗
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЛОК 5: ОБУЧЕНИЕ И КОНСАЛТИНГ -->
+  <section class="courses-section" id="consulting">
+    <div class="container">
+      <div class="section-title">
+        <h2>Форматы обучения и консалтинга</h2>
+        <p>Передача стандартов пекарного производства, разбор производственных ошибок и постановка процессов от бренд-шефа Максима Веретельникова</p>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Тариф 1 -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 class="plan-title">Базовый уровень</h3>
+            <p class="plan-subtitle">Интенсивная база для самостоятельного освоения и интеграции в цех</p>
+          </div>
+          <div class="plan-price-wrap">
+            <div class="plan-price">75 000 ₽</div>
+            <div class="plan-note">Единоразовый платёж</div>
+          </div>
+          <ul class="plan-features">
+            <li class="plan-feature-item">Полная база 4 ключевых технологических карт в Google Таблицах</li>
+            <li class="plan-feature-item">Алгоритмы автоматического расчета сырья и потерь при выпечке</li>
+            <li class="plan-feature-item">Температурные карты расстойки и выпечки для печей</li>
+            <li class="plan-feature-item">Методичка по работе с заквасками спонтанного брожения</li>
+            <li class="plan-feature-item">Доступ к обновлениям базы рецептур навсегда</li>
+          </ul>
+          <a href="#checkout" class="btn btn-primary plan-btn">Оплатить доступ</a>
+        </div>
+
+        <!-- Тариф 2 -->
+        <div class="pricing-card featured">
+          <span class="pricing-badge-hit">Хит</span>
+          <div class="plan-header">
+            <h3 class="plan-title">Продвинутый уровень</h3>
+            <p class="plan-subtitle">Полное производственное сопровождение и личный консалтинг бренд-шефа</p>
+          </div>
+          <div class="plan-price-wrap">
+            <div class="plan-price">250 000 ₽</div>
+            <div class="plan-note">Возможна оплата в 2 платежа по 125 000 ₽</div>
+          </div>
+          <ul class="plan-features">
+            <li class="plan-feature-item">Всё, что входит в «Базовый уровень» без ограничений</li>
+            <li class="plan-feature-item">Личный аудит вашего оборудования и подбор сырьевой базы</li>
+            <li class="plan-feature-item">4 индивидуальные онлайн-сессии по разбору замеса и брака</li>
+            <li class="plan-feature-item">Оптимизация производственного фудкоста и тайминга смен</li>
+            <li class="plan-feature-item">Разработка 2 авторских позиций под концепцию вашей пекарни</li>
+            <li class="plan-feature-item">Закрытый чат поддержки с Максимом Веретельниковым на 30 дней</li>
+          </ul>
+          <a href="#checkout" class="btn btn-primary plan-btn">Забронировать тариф</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЛОК 6: ОПЛАТА ПО СБП -->
+  <section class="payment-section" id="checkout">
+    <div class="container">
+      <div class="section-title">
+        <h2>Оплата по СБП</h2>
+        <p>Мгновенный перевод через Систему быстрых платежей без банковской комиссии</p>
+      </div>
+
+      <div class="payment-card">
+        <span class="badge-olive payment-badge">Безопасный расчет</span>
+
+        <div class="qr-box">
+          <img src="img/qr-sbp.png" alt="QR-код СБП для оплаты Vereteno Bakery" class="qr-image" loading="lazy">
+        </div>
+
+        <p class="payment-instruction">
+          Отсканируйте QR-код в мобильном приложении вашего банка, чтобы совершить перевод.<br>
+          После оплаты нажмите кнопку ниже и пришлите скриншот чека в Telegram Максиму. Доступ к защищенным Google Таблицам выдается сразу после подтверждения.
+        </p>
+
+        <a href="https://t.me/maxim_vereteno?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%D0%BB%20%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%20%D0%BA%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0%D0%BC%20Vereteno%20Bakery.%20%D0%A7%D0%B5%D0%BA%20%D0%BF%D1%80%D0%B8%D0%BA%D1%80%D0%B5%D0%BF%D0%BB%D1%8F%D1%8E" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-primary payment-btn-tg">
+          Я оплатил(а), отправить чек
+        </a>
+
+        <div class="payment-security-note">
+          Официальный статус самозанятого • Электронный чек «Мой налог»
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЛОК 7: ФУТЕР -->
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">VERETENO <span>BAKERY</span></a>
+          <p class="footer-desc">
+            Авторские технологические карты, стандарты французского слоения и ремесленного хлебопечения от бренд-шефа Максима Веретельникова.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Навигация</h4>
+          <div class="footer-links">
+            <a href="#catalog">Ассортимент техкарт</a>
+            <a href="#chef">О бренд-шефе</a>
+            <a href="#consulting">Форматы обучения</a>
+            <a href="#checkout">Оплата по СБП</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Контакты</h4>
+          <div class="footer-links">
+            <a href="https://t.me/maxim_vereteno" target="_blank" rel="noopener noreferrer">Telegram: @maxim_vereteno</a>
+            <a href="https://www.threads.com/@_coach_maximich?hl=ru" target="_blank" rel="noopener noreferrer">Threads: @_coach_maximich</a>
+            <span>Санкт-Петербург, Россия</span>
+            <span>Режим работы: 09:00 — 21:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Vereteno Bakery. Все права защищены.</div>
+        <div>Самозанятый Веретельников М. • Публичная оферта и политика конфиденциальности</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- СКРИПТ ДЛЯ ШАПКИ И БУРГЕРА -->
+  <script>
+    const header = document.getElementById('siteHeader');
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link, #mobileMenu .btn');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    burgerBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('active');
+      burgerBtn.classList.toggle('active');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        burgerBtn.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+  </script>
+
+</body>
+</html>
