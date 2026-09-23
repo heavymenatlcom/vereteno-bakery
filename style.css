@@ -260,6 +260,27 @@ ul, ol {
 }
 
 .mobile-menu-overlay {
+   .mobile-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.mobile-close-btn:active {
+  transform: scale(0.9);
+  color: var(--color-accent);
+}
   position: fixed;
   top: 0;
   left: 0;
