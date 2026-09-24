@@ -196,17 +196,31 @@
           <div class="chef-facts-grid">
             <div class="fact-item">
               <div class="fact-num">15 лет</div>
-              <div class="fact-label">В профессии с 10 лет у печи</div>
+              <div class="fact-label">Работы с тестом</div>
             </div>
             <div class="fact-item">
-              <div class="fact-num">25 лет</div>
-              <div class="fact-label">Возраст бренд-шефа</div>
+              <div class="fact-num">2 года</div>
+              <div class="fact-label">Ведёт проект <a href="https://www.instagram.com/salty.bistro" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); text-decoration: underline; font-weight: 600;">Солти бистро (СПб)</a></div>
             </div>
             <div class="fact-item">
-              <div class="fact-num">BabichSchool</div>
-              <div class="fact-label">Выпускник международной школы</div>
+              <div class="fact-num" style="font-size: 18px; line-height: 1.2; margin-top: 4px;">BabichSchool<br>Stanfood<br>Zabavnikov</div>
+              <div class="fact-label" style="margin-top: 6px;">Пройденные курсы и школы</div>
             </div>
           </div>
+
+          <!-- Ссылки на проекты и соцсети -->
+          <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://www.instagram.com/salty.bistro" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 13px; gap: 6px;">
+              <span>Проект: @salty.bistro</span> ↗
+            </a>
+            <a href="https://www.threads.com/@_coach_maximich?hl=ru" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 13px; gap: 6px;">
+              <span>@_coach_maximich в Threads</span> ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
           <!-- Ссылка на блог в Threads -->
           <div style="margin-top: 20px;">
@@ -221,6 +235,7 @@
   </section>
 
   <!-- БЛОК 5: ОБУЧЕНИЕ И КОНСАЛТИНГ -->
+  <!-- БЛОК 5: ОБУЧЕНИЕ И КОНСАЛТИНГ -->
   <section class="courses-section" id="consulting">
     <div class="container">
       <div class="section-title">
@@ -229,16 +244,24 @@
       </div>
 
       <div class="courses-grid">
-        <!-- Тариф 1 -->
+        <!-- Тариф 1: Базовый -->
         <div class="pricing-card">
           <div class="plan-header">
             <h3 class="plan-title">Базовый уровень</h3>
             <p class="plan-subtitle">Интенсивная база для самостоятельного освоения и интеграции в цех</p>
           </div>
+          
           <div class="plan-price-wrap">
-            <div class="plan-price">75 000 ₽</div>
+            <div style="display: inline-block; background: #FFF1E6; color: var(--color-accent); font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 4px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">
+              Спеццена -25% до конца года
+            </div>
+            <div style="font-size: 16px; color: var(--color-text-muted); text-decoration: line-through; margin-bottom: 2px;">
+              75 000 ₽
+            </div>
+            <div class="plan-price">56 250 ₽</div>
             <div class="plan-note">Единоразовый платёж</div>
           </div>
+
           <ul class="plan-features">
             <li class="plan-feature-item">Полная база 4 ключевых технологических карт в Google Таблицах</li>
             <li class="plan-feature-item">Алгоритмы автоматического расчета сырья и потерь при выпечке</li>
@@ -248,6 +271,39 @@
           </ul>
           <a href="#checkout" class="btn btn-primary plan-btn">Оплатить доступ</a>
         </div>
+
+        <!-- Тариф 2: Консалтинг -->
+        <div class="pricing-card featured">
+          <span class="pricing-badge-hit">Хит</span>
+          <div class="plan-header">
+            <h3 class="plan-title">Продвинутый уровень (Консалтинг)</h3>
+            <p class="plan-subtitle">Полное производственное сопровождение и личный консалтинг бренд-шефа</p>
+          </div>
+
+          <div class="plan-price-wrap">
+            <div style="display: inline-block; background: #EAF0E4; color: var(--color-olive); font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 4px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">
+              Спеццена -25% до конца года
+            </div>
+            <div style="font-size: 16px; color: var(--color-text-muted); text-decoration: line-through; margin-bottom: 2px;">
+              250 000 ₽
+            </div>
+            <div class="plan-price">187 500 ₽</div>
+            <div class="plan-note">Возможна оплата в 2 платежа по 93 750 ₽</div>
+          </div>
+
+          <ul class="plan-features">
+            <li class="plan-feature-item">Всё, что входит в «Базовый уровень» без ограничений</li>
+            <li class="plan-feature-item">Личный аудит вашего оборудования и подбор сырьевой базы</li>
+            <li class="plan-feature-item">4 индивидуальные онлайн-сессии по разбору замеса и брака</li>
+            <li class="plan-feature-item">Оптимизация производственного фудкоста и тайминга смен</li>
+            <li class="plan-feature-item">Разработка 2 авторских позиций под концепцию вашей пекарни</li>
+            <li class="plan-feature-item">Закрытый чат поддержки с Максимом Веретельниковым на 30 дней</li>
+          </ul>
+          <a href="#checkout" class="btn btn-primary plan-btn">Забронировать консалтинг</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
         <!-- Тариф 2 -->
         <div class="pricing-card featured">
