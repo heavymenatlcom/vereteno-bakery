@@ -42,7 +42,7 @@
     </div>
   </header>
   
-  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <!-- МОБИЛЬНОЕ МЕНЮ С КРЕСТИКОМ -->
   <div class="mobile-menu-overlay" id="mobileMenu">
     <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Закрыть меню">✕</button>
     <a href="#catalog" class="mobile-nav-link">Ассортимент</a>
@@ -75,7 +75,7 @@
     </div>
   </section>
 
-  <!-- БЛОК 3: КАТАЛОГ -->
+  <!-- БЛОК 3: КАТАЛОГ ТЕХКАРТ -->
   <section class="catalog-section" id="catalog">
     <div class="container">
       <div class="section-title">
@@ -193,28 +193,33 @@
             «Я не учу абстрактному творчеству. Я даю точную физику процессов: от температуры дежи до процента влажности в расстойке. Моя задача — чтобы у вас был стабильный результат без брака и с предсказуемым фудкостом каждый рабочий день».
           </div>
 
-          <div class="chef-facts-grid">
-            <div class="fact-item">
-              <div class="fact-num">15 лет</div>
-              <div class="fact-label">Работы с тестом</div>
+          <!-- Сетка фактов: ровные карточки -->
+          <div class="chef-facts-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: stretch;">
+            <div class="fact-item" style="display: flex; flex-direction: column; justify-content: center; min-height: 110px; padding: 16px 12px;">
+              <div class="fact-num" style="font-size: 26px; margin-bottom: 4px;">15 лет</div>
+              <div class="fact-label" style="font-size: 13px; line-height: 1.35;">Работы с тестом</div>
             </div>
-            <div class="fact-item">
-              <div class="fact-num">2 года</div>
-              <div class="fact-label">Ведёт проект <a href="https://www.instagram.com/salty.bistro" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); text-decoration: underline; font-weight: 600;">Солти бистро (СПб)</a></div>
+            
+            <div class="fact-item" style="display: flex; flex-direction: column; justify-content: center; min-height: 110px; padding: 16px 12px;">
+              <div class="fact-num" style="font-size: 26px; margin-bottom: 4px;">2 года</div>
+              <div class="fact-label" style="font-size: 13px; line-height: 1.35;">Шеф-пекарь проекта <strong>Солти бистро</strong></div>
             </div>
-            <div class="fact-item">
-              <div class="fact-num" style="font-size: 18px; line-height: 1.2; margin-top: 4px;">BabichSchool<br>Stanfood<br>Zabavnikov</div>
-              <div class="fact-label" style="margin-top: 6px;">Пройденные курсы и школы</div>
+            
+            <div class="fact-item" style="display: flex; flex-direction: column; justify-content: center; min-height: 110px; padding: 16px 12px;">
+              <div class="fact-num" style="font-size: 13px; font-weight: 700; line-height: 1.35; margin-bottom: 4px; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.04em;">
+                Babich • Stanfood • Zabavnikov
+              </div>
+              <div class="fact-label" style="font-size: 13px; line-height: 1.35;">Пройденные школы</div>
             </div>
           </div>
 
-          <!-- Ссылки на проекты и соцсети -->
-          <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
-            <a href="https://www.instagram.com/salty.bistro" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 13px; gap: 6px;">
-              <span>Проект: @salty.bistro</span> ↗
+          <!-- Кнопки проектов и соцсетей -->
+          <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://www.instagram.com/salty.bistro" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 13px; padding: 8px 16px;">
+              Проект @salty.bistro ↗
             </a>
-            <a href="https://www.threads.com/@_coach_maximich?hl=ru" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 13px; gap: 6px;">
-              <span>@_coach_maximich в Threads</span> ↗
+            <a href="https://www.threads.com/@_coach_maximich?hl=ru" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 13px; padding: 8px 16px;">
+              @_coach_maximich в Threads ↗
             </a>
           </div>
         </div>
@@ -222,20 +227,7 @@
     </div>
   </section>
 
-          <!-- Ссылка на блог в Threads -->
-          <div style="margin-top: 20px;">
-            <a href="https://www.threads.com/@_coach_maximich?hl=ru" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 13px; gap: 8px;">
-              <span>@_coach_maximich в Threads</span> ↗
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- БЛОК 5: ОБУЧЕНИЕ И КОНСАЛТИНГ -->
-  <!-- БЛОК 5: ОБУЧЕНИЕ И КОНСАЛТИНГ -->
+  <!-- БЛОК 5: ОБУЧЕНИЕ И КОНСАЛТИНГ СО СКИДКОЙ 25% -->
   <section class="courses-section" id="consulting">
     <div class="container">
       <div class="section-title">
@@ -243,7 +235,7 @@
         <p>Передача стандартов пекарного производства, разбор производственных ошибок и постановка процессов от бренд-шефа Максима Веретельникова</p>
       </div>
 
-      <div class="courses-grid">
+      <div class="courses-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; max-width: 960px; margin: 0 auto; align-items: stretch;">
         <!-- Тариф 1: Базовый -->
         <div class="pricing-card">
           <div class="plan-header">
@@ -255,10 +247,10 @@
             <div style="display: inline-block; background: #FFF1E6; color: var(--color-accent); font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 4px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">
               Спеццена -25% до конца года
             </div>
-            <div style="font-size: 16px; color: var(--color-text-muted); text-decoration: line-through; margin-bottom: 2px;">
+            <div style="font-size: 15px; color: var(--color-text-muted); text-decoration: line-through; margin-bottom: 2px;">
               75 000 ₽
             </div>
-            <div class="plan-price">56 250 ₽</div>
+            <div class="plan-price" style="font-size: 38px;">56 250 ₽</div>
             <div class="plan-note">Единоразовый платёж</div>
           </div>
 
@@ -284,10 +276,10 @@
             <div style="display: inline-block; background: #EAF0E4; color: var(--color-olive); font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 4px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">
               Спеццена -25% до конца года
             </div>
-            <div style="font-size: 16px; color: var(--color-text-muted); text-decoration: line-through; margin-bottom: 2px;">
+            <div style="font-size: 15px; color: var(--color-text-muted); text-decoration: line-through; margin-bottom: 2px;">
               250 000 ₽
             </div>
-            <div class="plan-price">187 500 ₽</div>
+            <div class="plan-price" style="font-size: 38px;">187 500 ₽</div>
             <div class="plan-note">Возможна оплата в 2 платежа по 93 750 ₽</div>
           </div>
 
@@ -300,31 +292,6 @@
             <li class="plan-feature-item">Закрытый чат поддержки с Максимом Веретельниковым на 30 дней</li>
           </ul>
           <a href="#checkout" class="btn btn-primary plan-btn">Забронировать консалтинг</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-        <!-- Тариф 2 -->
-        <div class="pricing-card featured">
-          <span class="pricing-badge-hit">Хит</span>
-          <div class="plan-header">
-            <h3 class="plan-title">Продвинутый уровень</h3>
-            <p class="plan-subtitle">Полное производственное сопровождение и личный консалтинг бренд-шефа</p>
-          </div>
-          <div class="plan-price-wrap">
-            <div class="plan-price">250 000 ₽</div>
-            <div class="plan-note">Возможна оплата в 2 платежа по 125 000 ₽</div>
-          </div>
-          <ul class="plan-features">
-            <li class="plan-feature-item">Всё, что входит в «Базовый уровень» без ограничений</li>
-            <li class="plan-feature-item">Личный аудит вашего оборудования и подбор сырьевой базы</li>
-            <li class="plan-feature-item">4 индивидуальные онлайн-сессии по разбору замеса и брака</li>
-            <li class="plan-feature-item">Оптимизация производственного фудкоста и тайминга смен</li>
-            <li class="plan-feature-item">Разработка 2 авторских позиций под концепцию вашей пекарни</li>
-            <li class="plan-feature-item">Закрытый чат поддержки с Максимом Веретельниковым на 30 дней</li>
-          </ul>
-          <a href="#checkout" class="btn btn-primary plan-btn">Забронировать тариф</a>
         </div>
       </div>
     </div>
@@ -350,12 +317,12 @@
           После оплаты нажмите кнопку ниже и пришлите скриншот чека в Telegram Максиму. Доступ к защищенным Google Таблицам выдается сразу после подтверждения.
         </p>
 
-       <a href="https://t.me/product_coach" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   class="btn btn-primary payment-btn-tg">
-  Я оплатил(а), отправить чек в Telegram
-</a>
+        <a href="https://t.me/product_coach" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-primary payment-btn-tg">
+          Я оплатил(а), отправить чек в Telegram
+        </a>
 
         <div class="payment-security-note">
           Официальный статус самозанятого • Электронный чек «Мой налог»
@@ -369,7 +336,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="https://t.me/product_coach" target="_blank" rel="noopener noreferrer">Telegram: @product_coach</a>
+          <a href="#" class="logo">VERETENO <span>BAKERY</span></a>
           <p class="footer-desc">
             Авторские технологические карты, стандарты французского слоения и ремесленного хлебопечения от бренд-шефа Максима Веретельникова.
           </p>
@@ -388,8 +355,9 @@
         <div>
           <h4 class="footer-col-title">Контакты</h4>
           <div class="footer-links">
-            <a href="https://t.me/maxim_vereteno" target="_blank" rel="noopener noreferrer">Telegram: @maxim_vereteno</a>
+            <a href="https://t.me/product_coach" target="_blank" rel="noopener noreferrer">Telegram: @product_coach</a>
             <a href="https://www.threads.com/@_coach_maximich?hl=ru" target="_blank" rel="noopener noreferrer">Threads: @_coach_maximich</a>
+            <a href="https://www.instagram.com/salty.bistro" target="_blank" rel="noopener noreferrer">Instagram: @salty.bistro</a>
             <span>Санкт-Петербург, Россия</span>
             <span>Режим работы: 09:00 — 21:00</span>
           </div>
